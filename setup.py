@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Marketplace',
-    version='0.1.5a',
+    version='0.1.6a',
     packages=['marketplace', ],
     license='Mozilla Public License (MPL 2.0)',
     author='Piotr Zalewa',
@@ -21,4 +21,6 @@ with Marketplace.
 You may find the source code and collaborate your time and experience at
 https://github.com/mozilla/Marketplace.Python
 """,
-    install_requires=['httplib2', 'oauth2', 'requests'])
+    install_requires=['httplib2>=0.7.7',
+                      'oauth2>=1.5.211',
+                      'requests>=1.0.4'])
